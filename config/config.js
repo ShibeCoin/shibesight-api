@@ -19,7 +19,7 @@ function getUserHome() {
   return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var home = process.env.INSIGHT_DB || (getUserHome() + '/.reddsight');
+var home = process.env.INSIGHT_DB || (getUserHome() + '/.shibesight');
 
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
@@ -57,8 +57,8 @@ var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
   if (isWin) dataDir = '%APPDATA%\\Reddcoin\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Reddcoin/';
-  if (isLinux) dataDir = process.env.HOME + '/.reddcoin/';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Shibecoin/';
+  if (isLinux) dataDir = process.env.HOME + '/.ShibeCoin/';
 }
 dataDir += network === 'testnet' ? 'testnet' : '';
 
