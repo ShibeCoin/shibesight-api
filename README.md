@@ -30,7 +30,7 @@ finished downloading the blockchain **before** running *Shibesight API*.
 
   To install *Shibesight API*, clone the main repository:
 
-    $ git clone https://github.com/Shibecoin/reddsight-api.git && cd shibesight-api
+    $ git clone https://github.com/Shibecoin/shibesight-api.git && cd shibesight-api
 
   Install dependencies:
 
@@ -143,7 +143,7 @@ To run the tests
 ```$ grunt test```
 
 
-Contributions and suggestions are welcome at [shibesight-api github repository](https://github.com/Shibecoin/reddsight-api).
+Contributions and suggestions are welcome at [shibesight-api github repository](https://github.com/Shibecoin/shibesight-api).
 
 ## Caching schema
 
